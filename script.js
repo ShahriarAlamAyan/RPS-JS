@@ -1,3 +1,10 @@
+const score = {
+    win: 0,
+    lose: 0,
+    tie: 0
+}
+
+
 function playGame(playerMove) {
     const computerMove = pickComputerMove()
     
@@ -12,7 +19,6 @@ function playGame(playerMove) {
             result = 'You Win'
         } 
         
-        
     } else if (playerMove === 'Paper'){
         if (computerMove === 'Rock') {
             result = 'You Win'
@@ -21,6 +27,7 @@ function playGame(playerMove) {
         } else if (computerMove === 'Scissors') {
             result = 'You Lose'
         }
+
     } else if (playerMove === 'Scissors'){
         if (computerMove === 'Rock') {
             result = 'You Lose'
@@ -31,20 +38,24 @@ function playGame(playerMove) {
         }
     }
 
+    if (result === 'You Win') {
+        score.win += 1
+    } else if (result === 'You Lose') {
+        score.lose += 1
+    } else if (result === 'Tie') {
+        score.tie += 1
+    }
 
-    alert('You picked ' + playerMove + ', Computer picked '+ computerMove + ', Result is: ' + result)
-
-    /*
-
-    -- Another way to make this alert --
-    alert(`You picked Rock, Computer picked ${computerMove}, Result is: ${result}`)
+    alert('You picked ' + playerMove + ', Computer picked '+ computerMove + ', Result is: ' + result + '\nScore: Win:' + score.win + ' Lose:' + score.lose + ' Tie:' + score.tie)
     
+    
+
+    /* -- Another way to make this alert --
+    alert(`You picked ${playerMove}, Computer picked ${computerMove}, Result is: ${result}
+        Score: Win:${score.win} Lose:${score.lose} Tie:${score.tie}`)
     */
-
-
+    
 }
-
-
 
 function pickComputerMove() {
     const randomNumber = Math.random()
