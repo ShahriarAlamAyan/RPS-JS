@@ -7,74 +7,17 @@
 </head>
 <body>
     <p>Rock Paper Scissors</p> <br>
+    
     <button onclick="
-    const computerMove = pickComputerMove()
-    
-
-    let result = ''
-
-    if (computerMove === 'Rock') {
-        result = 'Tie'
-    } else if (computerMove === 'Paper') {
-        result = 'You Lose'
-    } else if (computerMove === 'Scissors') {
-        result = 'You Win'
-    }
-
-    console.log(result);
-    
-
-    alert('You picked Rock, Computer picked '+ computerMove + ', Result is: ' + result)
-    
-    
-    /*
-
-    -- Another way to make this alert --
-    alert(`You picked Rock, Computer picked ${computerMove}, Result is: ${result}`)
-    
-    */
-
-
+    playGame('Rock')
     ">Rock</button>
     <button onclick="
-    const computerMove = pickComputerMove()
-    
-
-    if (computerMove === 'Rock') {
-        result = 'You Win'
-    } else if (computerMove === 'Paper') {
-        result = 'Tie'
-    } else if (computerMove === 'Scissors') {
-        result = 'You Lose'
-    }
-
-    console.log(result);
-    
-
-    alert('You picked Paper, Computer picked '+ computerMove + ', Result is: ' + result)
-
-    
-    
+    playGame('Paper')
     ">Paper</button>
     <button onclick="
-    const computerMove = pickComputerMove()
-
-    if (computerMove === 'Rock') {
-        result = 'You Lose'
-    } else if (computerMove === 'Paper') {
-        result = 'You Win'
-    } else if (computerMove === 'Scissors') {
-        result = 'Tie'
-    }
-    
-    console.log(result);
-    
-    alert('You picked Scissors, Computer picked '+ computerMove + ', Result is: ' + result)
-    
+    playGame('Scissors')
     ">Scissors</button>
 <script src="script.js"></script>
 </body>
 </html>
 
-
-<!-- Going to improve the project -->
