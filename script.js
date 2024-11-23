@@ -1,8 +1,19 @@
-const score = {
+let score = JSON.parse(localStorage.getItem('score')) || {
     win: 0,
     lose: 0,
     tie: 0
-}
+    }
+
+/* -- Another way to make this opration-- 
+    if (score === null){
+        score ={
+        win: 0,
+        lose: 0,
+        tie: 0
+        }
+    };
+*/
+
 
 
 function playGame(playerMove) {
@@ -45,6 +56,8 @@ function playGame(playerMove) {
     } else if (result === 'Tie') {
         score.tie += 1
     }
+
+    localStorage.setItem('score',JSON.stringify(score))
 
     alert('You picked ' + playerMove + ', Computer picked '+ computerMove + ', Result is: ' + result + '\nScore: Win:' + score.win + ' Lose:' + score.lose + ' Tie:' + score.tie)
     
