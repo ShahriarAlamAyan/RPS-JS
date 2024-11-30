@@ -1,34 +1,75 @@
+# Rock Paper Scissors Game
 
-## Rock Paper Scissors Game
-
-### Description
-This is a simple Rock-Paper-Scissors game built using HTML, CSS, and JavaScript. The game allows the player to select either "Rock," "Paper," or "Scissors," then displays the result based on a random choice made by the computer.
-
-### Features
-- **Interactive gameplay**: Choose between Rock, Paper, and Scissors, then see the result against a computer opponent.
-- **Random computer choice**: The computer’s choice is generated randomly, making each round unique.
-- **Alert-based results**: Game results are displayed in alert pop-ups.
-
-### Technologies Used
-- **HTML**: Provides the structure of the game.
-- **JavaScript**: Controls the game logic, random computer choices, and outcome display.
-
-### How to Use
-1. Clone or download this repository:
-   ```bash
-   git clone https://github.com/ShahriarAlamAyan/RPS-JS.git
-   ```
-2. Open the `index.html` file in your web browser.
-3. Select "Rock," "Paper," or "Scissors" by clicking the corresponding button. An alert will pop up showing the computer’s choice and the result of the game.
-
-### Future Improvement Ideas
-- **Score tracking**: Track wins, losses, and ties.
-- **Improved UI/UX**: Display results directly on the page instead of using alerts.
-- **CSS styling**: Add styling to make the game more visually appealing.
-- **Animations**: Incorporate animations to enhance gameplay.
-
-### Contributing
-Feel free to fork this repository, make improvements, and submit a pull request if you'd like to enhance the game.
+This is a simple **Rock Paper Scissors** game implemented using HTML, CSS, and JavaScript. Users can play against the computer, track their scores, and reset the game at any time.
 
 ---
 
+## **Features**
+
+- Play Rock, Paper, Scissors against the computer.
+- Displays live score tracking: Wins, Losses, and Ties.
+- Scores persist across sessions using `localStorage`.
+- Includes a Reset button to clear the score and start fresh.
+
+---
+
+## **How to Play**
+
+1. Open the `index.html` file in any modern web browser.
+2. Click one of the buttons (`Rock`, `Paper`, or `Scissors`) to make your move.
+3. The computer will randomly pick its move, and the result will be displayed in an alert.
+4. The score will update dynamically in the web page.
+5. To reset the scores, click the **Reset** button.
+
+---
+
+## **Files in the Project**
+
+- **index.html**  
+  Contains the structure of the game, including buttons for gameplay and score display.
+
+- **script.js**  
+  Contains the game logic, including:
+  - Handling the player's move.
+  - Generating the computer's move.
+  - Determining the result (Win, Lose, or Tie).
+  - Updating and displaying the score.
+  - Resetting the score.
+
+---
+
+## **Technologies Used**
+
+- **HTML5** for the game structure.  
+- **CSS3** (optional) for styling (not included in the current project).  
+- **JavaScript** for the game logic and interactivity.  
+- **localStorage** for score persistence.
+
+---
+
+## **How to Run the Project**
+
+1. Clone or download this repository.
+2. Open the `index.html` file in your browser.
+3. Play the game!
+
+---
+
+## **Future Improvements**
+
+- Add custom styles using CSS for a better UI/UX.
+- Add animations for button clicks and score updates.
+- Include sounds or visual effects for better feedback.
+- Expand the game to include additional moves (e.g., "Lizard" and "Spock").
+
+---
+
+## **License**
+
+This project is open-source and free to use. Modify it as you wish!  
+
+---
+
+## **Acknowledgments**
+
+This project was created as a practice exercise to learn and implement basic JavaScript functionality. If you find it useful, feel free to use it or build upon it!
