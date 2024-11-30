@@ -14,7 +14,7 @@ let score = JSON.parse(localStorage.getItem('score')) || {
     };
 */
 
-
+    updateScoreElement()
 
 function playGame(playerMove) {
     const computerMove = pickComputerMove()
@@ -59,10 +59,23 @@ function playGame(playerMove) {
 
     localStorage.setItem('score',JSON.stringify(score))
 
-    alert('You picked ' + playerMove + ', Computer picked '+ computerMove + ', Result is: ' + result + '\nScore: Win:' + score.win + ' Lose:' + score.lose + ' Tie:' + score.tie)
+    updateScoreElement()
     
+    document.querySelector('.js-result')
+    .innerHTML = result
+
+    document.querySelector('.js-moves')
+    .innerHTML = 'Your move was ' + playerMove + ' & Computer picked '+ computerMove
+
+    //alert('You picked ' + playerMove + ', Computer picked '+ computerMove + ', Result is: ' + result + '\nScore: Win:' + score.win + ' Lose:' + score.lose + ' Tie:' + score.tie)
     
 
+    }
+
+    function updateScoreElement() {
+        document.querySelector('.js-score')
+        .innerHTML = 'Score: Win:' + score.win + ' Lose:' + score.lose + ' Tie:' + score.tie
+    
     /* -- Another way to make this alert --
     alert(`You picked ${playerMove}, Computer picked ${computerMove}, Result is: ${result}
         Score: Win:${score.win} Lose:${score.lose} Tie:${score.tie}`)
