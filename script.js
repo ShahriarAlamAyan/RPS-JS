@@ -65,7 +65,14 @@ function playGame(playerMove) {
     .innerHTML = result
 
     document.querySelector('.js-moves')
-    .innerHTML = 'Your move was ' + playerMove + ' & Computer picked '+ computerMove
+    .innerHTML = `
+            You picked 
+        <img src="img/RPS ${playerMove}.png" class="move-icon" alt=""> 
+        and Computer picked 
+        <img src="img/RPS ${computerMove}.png" class="move-icon" alt="">
+`
+    
+    // 'Your move was ' + playerMove + ' & Computer picked '+ computerMove
 
     //alert('You picked ' + playerMove + ', Computer picked '+ computerMove + ', Result is: ' + result + '\nScore: Win:' + score.win + ' Lose:' + score.lose + ' Tie:' + score.tie)
     
