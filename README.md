@@ -1,75 +1,53 @@
-# Rock Paper Scissors Game
+## Rock Paper Scissors Game
 
-This is a simple **Rock Paper Scissors** game implemented using HTML, CSS, and JavaScript. Users can play against the computer, track their scores, and reset the game at any time.
-
----
-
-## **Features**
-
-- Play Rock, Paper, Scissors against the computer.
-- Displays live score tracking: Wins, Losses, and Ties.
-- Scores persist across sessions using `localStorage`.
-- Includes a Reset button to clear the score and start fresh.
+### Description  
+A classic **Rock Paper Scissors** game implemented with HTML, CSS, and JavaScript. Players can select their move and see the result of their game against a computer opponent, with a live score tracker that persists across sessions.
 
 ---
 
-## **How to Play**
-
-1. Open the `index.html` file in any modern web browser.
-2. Click one of the buttons (`Rock`, `Paper`, or `Scissors`) to make your move.
-3. The computer will randomly pick its move, and the result will be displayed in an alert.
-4. The score will update dynamically in the web page.
-5. To reset the scores, click the **Reset** button.
+### Features  
+- **Interactive Gameplay**: Choose between Rock, Paper, or Scissors and see your result.  
+- **Score Tracker**: Keeps track of wins, losses, and ties using `localStorage`, even after refreshing the page.  
+- **Reset Button**: Allows resetting the score to start fresh.  
+- **Visual Enhancements**: Icons representing the moves (Rock, Paper, Scissors) are displayed for both the player and the computer.  
 
 ---
 
-## **Files in the Project**
-
-- **index.html**  
-  Contains the structure of the game, including buttons for gameplay and score display.
-
-- **script.js**  
-  Contains the game logic, including:
-  - Handling the player's move.
-  - Generating the computer's move.
-  - Determining the result (Win, Lose, or Tie).
-  - Updating and displaying the score.
-  - Resetting the score.
+### Technologies Used  
+- **HTML**: For structuring the game elements.  
+- **CSS**: For styling the interface with a clean and modern look.  
+- **JavaScript**: For game logic, score tracking, and dynamic updates.  
 
 ---
 
-## **Technologies Used**
-
-- **HTML5** for the game structure.  
-- **CSS3** (optional) for styling (not included in the current project).  
-- **JavaScript** for the game logic and interactivity.  
-- **localStorage** for score persistence.
-
----
-
-## **How to Run the Project**
-
-1. Clone or download this repository.
-2. Open the `index.html` file in your browser.
-3. Play the game!
+### How to Use  
+1. Clone or download this repository:  
+   ```bash
+   git clone https://github.com/your-username/rock-paper-scissors-game.git
+   ```
+2. Open the `index.html` file in any modern web browser.  
+3. Play the game by clicking on the buttons for Rock, Paper, or Scissors.  
+4. View the results and scores live on the page.  
+5. Use the **Reset** button to clear the scores and start fresh.
 
 ---
 
-## **Future Improvements**
-
-- Add custom styles using CSS for a better UI/UX.
-- Add animations for button clicks and score updates.
-- Include sounds or visual effects for better feedback.
-- Expand the game to include additional moves (e.g., "Lizard" and "Spock").
-
----
-
-## **License**
-
-This project is open-source and free to use. Modify it as you wish!  
+### File Structure  
+- `index.html`: Contains the game layout and structure.  
+- `style.css`: Styles the page with dark mode and a clean design.  
+- `script.js`: Handles the game logic, score management, and interactivity.  
+- `img/`: Directory for Rock, Paper, and Scissors icons.  
 
 ---
 
-## **Acknowledgments**
+### Future Improvements  
+- **Animations**: Add animations for moves and results to make the game more engaging.  
+- **Responsive Design**: Optimize for mobile devices and smaller screens.  
+- **Multiplayer Mode**: Allow two players to compete instead of playing against the computer.  
 
-This project was created as a practice exercise to learn and implement basic JavaScript functionality. If you find it useful, feel free to use it or build upon it!
+---
+
+### Contributing  
+Feel free to fork this repository, make enhancements, and submit a pull request!
+
+---
