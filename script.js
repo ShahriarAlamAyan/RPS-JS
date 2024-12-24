@@ -67,9 +67,9 @@ function playGame(playerMove) {
     document.querySelector('.js-moves')
     .innerHTML = `
             You picked 
-        <img src="img/RPS ${playerMove}.png" class="move-icon" alt=""> 
+        <img src="img/${playerMove}.png" class="move-icon" alt=""> 
         and Computer picked 
-        <img src="img/RPS ${computerMove}.png" class="move-icon" alt="">
+        <img src="img/${computerMove}.png" class="move-icon" alt="">
 `
     
     // 'Your move was ' + playerMove + ' & Computer picked '+ computerMove
